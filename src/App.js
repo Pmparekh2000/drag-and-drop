@@ -1,12 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import DragAndDrop from './components/DragAndDrop';
-import { CONTAINERS_DATA } from './utils/containers';
 
 function App() {
   return (
     <div className="App">
-      <DragAndDrop containersData={CONTAINERS_DATA} />
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
