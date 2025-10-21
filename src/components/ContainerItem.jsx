@@ -1,26 +1,8 @@
-import React, { useRef } from 'react'
+import React from 'react'
 
-const ContainerItem = ({item, title, dragItem, setDragItem, dragContainer, setDragContainer}) => {
-
-    const handleDragStart = (e, item, title) => {
-        // dragItem.current = item;
-        // dragContainer.current = title;
-        setDragItem(item);
-        setDragContainer(title);
-        // console.log("Handle drag start", item, title);
-        
-        e.target.style.opacity = "0.5";
-    };
-    const handleDragEnd = (e) => {
-        e.target.style.opacity = "1";
-    }
+const ContainerItem = ({item}) => {
   return (
-    <div
-        draggable
-        onDragStart={(e) => handleDragStart(e, item, title)}
-        onDragEnd={handleDragEnd}
-        className='container-item-description'
-    >
+    <div className='container-item-description'>
         {item?.description}
     </div>
   )

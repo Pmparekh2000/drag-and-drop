@@ -9,7 +9,7 @@ const DragAndDrop = ({containersData}) => {
     <div className='drag-and-drop-container'>
         {
             data?.map((container) => {
-                return (<Container key={container?.title} container={container} setData={setData} data={data}/>);
+                return (<Container key={container?.title} container={container}/>);
             })
         }
     </div>
